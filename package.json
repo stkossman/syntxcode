@@ -11,14 +11,13 @@
     "build": "sass scss/syntxcode.scss dist/syntxcode.css --no-source-map",
     "build:min": "sass scss/syntxcode.scss dist/syntxcode.min.css --style=compressed --no-source-map",
     "dev": "sass --watch scss/syntxcode.scss dist/syntxcode.css",
-    "clean": "rm -rf dist && mkdir dist",
-    "prepare": "npm run clean && npm run build && npm run build:min"
+    "prepare": "npm run build && npm run build:min"
   },
   "keywords": ["css", "scss", "syntax highlighting", "code", "nojs"],
   "author": "Kossman (https://github.com/stkossman)",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/stkossman/syntxcode.git"
   },
   "license": "MIT",
   "devDependencies": {

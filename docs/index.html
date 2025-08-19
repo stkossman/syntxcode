@@ -10,6 +10,229 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="header">
+    <div class="container header-content">
+        <a href="#" class="logo">
+            Syntx<span>&lt;Code/&gt;</span>
+        </a>
+        <div class="social-links">
+            <a href="https://github.com/stkossman/syntxcode" class="social-link">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/andriistavskyi" class="social-link">
+                Linkedin
+            </a>
+        </div>
+    </div>
+</header>
 
+<main class="container">
+    <section class="hero">
+        <h1>Highlight syntax without JavaScript</h1>
+        <p>SyntxCode is CSS framework for highlighting syntax inside &lt;code&gt; tag. Lightweight, easy to use, and dependency-free.</p>
+        <a href="#installation" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <p>SyntxCode supports multiple programming languages and syntax highlighting themes.:</p>
+
+        <div class="usage-grid">
+            <div class="usage-card">
+                <h4>Supported Languages</h4>
+                <ul>
+                    <li>Base (basic)</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Ruby</li>
+                </ul>
+            </div>
+
+            <div class="usage-card">
+                <h4>Available themes</h4>
+                <ul>
+                    <li>Light</li>
+                    <li>Dark</li>
+                    <li>GitHub Dark</li>
+                </ul>
+            </div>
+
+            <div class="usage-card">
+                <h4>Advantages</h4>
+                <ul>
+                    <li>No dependencies</li>
+                    <li>Easy to use</li>
+                    <li>Adaptive</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>Add SyntxCode to your project via CDN or download locally:</p>
+
+        <div class="demo-block">
+            <h4>via CDN (рекомендовано)</h4>
+            <div class="sxcode is-html theme-light">
+                    <pre><code>
+<span class="tok-punc">&lt;</span><span class="tok-tag">link</span> <span class="tok-attr">rel</span><span class="tok-punc">=</span><span class="tok-string">"stylesheet"</span> <span class="tok-attr">href</span><span class="tok-punc">=</span><span class="tok-string">"https://cdn.jsdelivr.net/gh/yourusername/syntxcode/dist/syntxcode.min.css"</span><span class="tok-punc">&gt;</span>
+                    </code></pre>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4>Local Installation</h4>
+            <div class="sxcode is-html theme-light">
+                    <pre><code>
+<span class="tok-punc">&lt;</span><span class="tok-tag">link</span> <span class="tok-attr">rel</span><span class="tok-punc">=</span><span class="tok-string">"stylesheet"</span> <span class="tok-attr">href</span><span class="tok-punc">=</span><span class="tok-string">"path/to/syntxcode.min.css"</span><span class="tok-punc">&gt;</span>
+                    </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage">
+        <h2>Usage</h2>
+        <p>Add the appropriate classes to the container with the code for syntax highlighting:</p>
+
+        <div class="demo-block">
+            <h4>Basic Structure</h4>
+            <div class="sxcode is-html theme-light">
+                    <pre><code>
+<span class="tok-punc">&lt;</span><span class="tok-tag">div</span> <span class="tok-attr">class</span><span class="tok-punc">=</span><span class="tok-string">"sxcode is-[language] theme-[name]"</span><span class="tok-punc">&gt;</span>
+  <span class="tok-punc">&lt;</span><span class="tok-tag">pre</span><span class="tok-punc">&gt;&lt;</span><span class="tok-tag">code</span><span class="tok-punc">&gt;</span>
+    <span class="tok-comment">&lt;!-- Your code with tok-* classes --&gt;</span>
+  <span class="tok-punc">&lt;/</span><span class="tok-tag">code</span><span class="tok-punc">&gt;&lt;/</span><span class="tok-tag">pre</span><span class="tok-punc">&gt;</span>
+<span class="tok-punc">&lt;/</span><span class="tok-tag">div</span><span class="tok-punc">&gt;</span>
+                    </code></pre>
+            </div>
+        </div>
+
+        <h3>Examples of different languages</h3>
+
+        <div class="theme-selector">
+            <button class="theme-btn active" data-theme="light">Light theme</button>
+            <button class="theme-btn" data-theme="dark">Dark theme</button>
+            <button class="theme-btn" data-theme="github-dark">GitHub Dark</button>
+        </div>
+
+        <div class="demo-block">
+            <h4>HTML</h4>
+            <div class="sxcode is-html theme-light">
+                    <pre><code>
+<span class="tok-punc">&lt;</span><span class="tok-tag">div</span> <span class="tok-attr">class</span><span class="tok-punc">=</span><span class="tok-string">"container"</span><span class="tok-punc">&gt;</span>
+  <span class="tok-punc">&lt;</span><span class="tok-tag">h1</span><span class="tok-punc">&gt;</span>Hello World<span class="tok-punc">&lt;/</span><span class="tok-tag">h1</span><span class="tok-punc">&gt;</span>
+  <span class="tok-punc">&lt;</span><span class="tok-tag">p</span><span class="tok-punc">&gt;</span>Welcome to my website<span class="tok-punc">&lt;/</span><span class="tok-tag">p</span><span class="tok-punc">&gt;</span>
+<span class="tok-punc">&lt;/</span><span class="tok-tag">div</span><span class="tok-punc">&gt;</span>
+                    </code></pre>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4>CSS</h4>
+            <div class="sxcode is-css theme-light">
+                    <pre><code>
+<span class="tok-selector">h1</span> <span class="tok-punc">{</span>
+  <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">red</span><span class="tok-punc">;</span>
+  <span class="tok-property">margin</span><span class="tok-punc">:</span> <span class="tok-number">1rem</span><span class="tok-punc">;</span>
+  <span class="tok-property">font-family</span><span class="tok-punc">:</span> <span class="tok-value">sans-serif</span><span class="tok-punc">;</span>
+<span class="tok-punc">}</span>
+
+<span class="tok-selector">.container</span> <span class="tok-punc">{</span>
+  <span class="tok-property">max-width</span><span class="tok-punc">:</span> <span class="tok-number">1200px</span><span class="tok-punc">;</span>
+  <span class="tok-property">margin</span><span class="tok-punc">:</span> <span class="tok-number">0</span> <span class="tok-value">auto</span><span class="tok-punc">;</span>
+<span class="tok-punc">}</span>
+                    </code></pre>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4>JavaScript</h4>
+            <div class="sxcode is-js theme-light">
+                    <pre><code>
+<span class="tok-keyword">function</span> <span class="tok-func">add</span><span class="tok-punc">(</span><span class="tok-variable">a</span><span class="tok-punc">,</span> <span class="tok-variable">b</span><span class="tok-punc">)</span> <span class="tok-punc">{</span>
+  <span class="tok-keyword">return</span> <span class="tok-variable">a</span> <span class="tok-operator">+</span> <span class="tok-variable">b</span><span class="tok-punc">;</span>
+<span class="tok-punc">}</span>
+
+<span class="tok-keyword">const</span> <span class="tok-variable">user</span> <span class="tok-operator">=</span> <span class="tok-punc">{</span>
+  <span class="tok-property">name</span><span class="tok-punc">:</span> <span class="tok-string">"John"</span><span class="tok-punc">,</span>
+  <span class="tok-property">age</span><span class="tok-punc">:</span> <span class="tok-number">30</span><span class="tok-punc">,</span>
+  <span class="tok-property">isAdmin</span><span class="tok-punc">:</span> <span class="tok-boolean">false</span>
+<span class="tok-punc">}</span><span class="tok-punc">;</span>
+                    </code></pre>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4>Ruby</h4>
+            <div class="sxcode is-ruby theme-light">
+                    <pre><code>
+<span class="tok-keyword">module</span> <span class="tok-module">MathUtils</span>
+  <span class="tok-constant">PI</span> <span class="tok-operator">=</span> <span class="tok-number">3.1415</span>
+
+  <span class="tok-keyword">def</span> <span class="tok-func">self</span><span class="tok-punc">.</span><span class="tok-func">circle_area</span><span class="tok-punc">(</span><span class="tok-variable">radius</span><span class="tok-punc">)</span>
+    <span class="tok-constant">PI</span> <span class="tok-operator">*</span> <span class="tok-variable">radius</span><span class="tok-operator">**</span><span class="tok-number">2</span>
+  <span class="tok-keyword">end</span>
+<span class="tok-keyword">end</span>
+
+<span class="tok-comment"># comment</span>
+<span class="tok-variable">radius</span> <span class="tok-operator">=</span> <span class="tok-number">5</span>
+<span class="tok-func">puts</span> <span class="tok-string">"Circle area: #{</span><span class="tok-module">MathUtils</span><span class="tok-punc">.</span><span class="tok-func">circle_area</span><span class="tok-punc">(</span><span class="tok-variable">radius</span><span class="tok-punc">)</span><span class="tok-string">}"</span>
+                    </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes">
+        <h2>Token classes</h2>
+        <p>SyntxCode uses a set of CSS classes for different types of tokens in the code.:</p>
+
+        <div class="demo-block">
+            <div class="sxcode is-css theme-light">
+                    <pre><code>
+<span class="tok-comment">/* Comments */</span>
+<span class="tok-selector">.tok-comment</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#6a737d</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Keywords */</span>
+<span class="tok-selector">.tok-keyword</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#d73a49</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Strings */</span>
+<span class="tok-selector">.tok-string</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#032f62</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Numbers */</span>
+<span class="tok-selector">.tok-number</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#005cc5</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Functions */</span>
+<span class="tok-selector">.tok-func</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#6f42c1</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Operators */</span>
+<span class="tok-selector">.tok-operator</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#d73a49</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* Punctuation */</span>
+<span class="tok-selector">.tok-punc</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#24292e</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* HTML tags */</span>
+<span class="tok-selector">.tok-tag</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#22863a</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+
+<span class="tok-comment">/* HTML attributes */</span>
+<span class="tok-selector">.tok-attr</span> <span class="tok-punc">{</span> <span class="tok-property">color</span><span class="tok-punc">:</span> <span class="tok-value">#6f42c1</span><span class="tok-punc">;</span> <span class="tok-punc">}</span>
+                    </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="thanketh">
+        <h2>Thanks for using SyntxCode</h2>
+        <p>And thanks other frameworks for inspiration. SyntxCode is inspired by other frameworks like <a href="https://prismjs.com">Prism.js</a>, <a href="https://highlightjs.org">Highlight.js</a>, and others.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 SyntxCode - <a href="https://github.com/stkossman">stkossman</a> - Built with love for developers.</p>
+    </div>
+</footer>
 </body>
+<script src="scripts.js"></script>
 </html>
