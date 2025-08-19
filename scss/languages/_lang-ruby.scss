@@ -1,0 +1,20 @@
+@use "../settings" as *;
+
+.sxcode.is-ruby {
+  .tok-keyword { color: $color-keyword; font-weight: bold; }
+  .tok-string { color: $color-string; }
+  .tok-comment {color: $color-comment; font-style: italic; }
+  .tok-number { color: $color-number; }
+  .tok-symbol { color: darken($color-number, 5%); }
+  .tok-regex { color: lighten($color-string, 10%); }
+  .tok-func { color: $color-func; }
+  .tok-operator { color: $color-punc; }
+  .tok-constant { color: $color-attr; font-style: italic; }
+  .tok-class { color: $color-tag; font-weight: bold; }
+  .tok-module { color: $color-tag; }
+  .tok-global { color: mix($color-func, $color-keyword, 50%); }
+  .tok-instance-var { color: $color-attr; }
+  .tok-class-var { color: lighten($color-attr, 10%); }
+  .tok-boolean { color: $color-keyword; }
+  .tok-nil { color: $color-muted; }
+}

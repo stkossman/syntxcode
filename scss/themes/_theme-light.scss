@@ -1,0 +1,12 @@
+@use "../settings" as *;
+
+.sxcode.theme-light {
+  background: $color-bg;
+
+  pre,
+  code {
+    background: $color-bg;
+    color: $color-text;
+    border-color: $color-border;
+  }
+}

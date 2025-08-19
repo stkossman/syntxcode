@@ -1,0 +1,24 @@
+$font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !default;
+
+$font-size-code: 0.95rem !default;
+$line-height-code: 1.5 !default;
+
+$padding-code-block: 1rem !default;
+$border-radius-code: 0.5rem !default;
+
+// base light theme
+$color-bg: #fdfdfd !default;
+$color-surface: #f7f7f7 !default;
+$color-border: #e1e1e1 !default;
+$color-text: #2b2b2b !default;
+$color-muted: #6a737d !default;
+
+// base tokens
+$color-keyword: #d73a49 !default;
+$color-string: #032f62 !default;
+$color-comment: #6a737d !default;
+$color-tag: #22863a !default;
+$color-attr: #005cc5 !default;
+$color-punc: #24292e !default;
+$color-func: #6f42c1 !default;
+$color-number: #e36209 !default;

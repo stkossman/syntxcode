@@ -1,0 +1,32 @@
+@use "settings" as *;
+
+.sxcode.compact pre {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+// pseudo-element only css
+.sxcode.lined pre {
+  position: relative;
+  padding-left: 3rem;
+
+  counter-reset: line;
+}
+
+.sxcode.lined pre code {
+  display: block;
+}
+
+.sxcode.lined pre code > span {
+  display: block;
+  counter-increment: line;
+
+  &::before {
+    content: counter(line);
+    position: absolute;
+    left: 0.75rem;
+    color: $color-muted;
+    text-align: right;
+    width: 2rem;
+  }
+}

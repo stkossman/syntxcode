@@ -1,0 +1,9 @@
+@use "../settings" as *;
+
+.sxcode.is-html {
+  .tok-tag { color: $color-tag; }
+  .tok-attr { color: $color-attr; }
+  .tok-string { color: $color-string; }
+  .tok-punc { color: $color-punc; }
+  .tok-comment { color: $color-comment; font-style: italic; }
+}

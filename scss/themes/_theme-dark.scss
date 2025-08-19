@@ -1,0 +1,65 @@
+@use "../settings" as *;
+
+.sxcode.theme-dark {
+  background: #1e1e1e;
+
+  pre,
+  code {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border-color: #333;
+  }
+
+  // base
+  .tok-keyword { color: #569cd6; }
+  .tok-string { color: #ce9178; }
+  .tok-comment { color: #6a9955; }
+  .tok-tag { color: #4ec9b0; }
+  .tok-attr { color: #9cdcfe; }
+  .tok-punc { color: #d4d4d4; }
+  .tok-func { color: #dcdcaa; }
+  .tok-number { color: #b5cea8; }
+  .tok-variable { color: #d4d4d4; }
+  .tok-operator { color: #d4d4d4; }
+
+  // css
+  &.is-css {
+    .tok-selector { color: #d7ba7d; }
+    .tok-property { color: #9cdcfe; }
+    .tok-value { color: #ce9178; }
+    .tok-unit { color: #b5cea8; }
+    .tok-important {color: #c586c0; }
+  }
+
+  // js
+  &.is-js {
+    .tok-keyword { color: #569cd6; }
+    .tok-variable { color: #9cdcfe; }
+    .tok-func { color: #dcdcaa; }
+    .tok-string { color: #ce9178; }
+    .tok-number { color: #b5cea8; }
+    .tok-operator { color: #d4d4d4; }
+    .tok-comment { color: #6a9955; font-style: italic; }
+  }
+
+  // html
+  &.is-html {
+    .tok-tag { color: #569cd6; }
+    .tok-attr { color: #9cdcfe; }
+    .tok-string { color: #ce9178; }
+    .tok-comment { color: #6a9955; font-style: italic; }
+    .tok-punc { color: #808080; }
+  }
+
+  &.is-ruby {
+    .tok-keyword { color: #ff7b72; }
+    .tok-string { color: #a5d6ff; }
+    .tok-symbol { color: #79c0ff; }
+    .tok-regex { color: #d2a8ff; }
+    .tok-constant { color: #79c0ff; }
+    .tok-class { color: #7ee787; }
+    .tok-module { color: #7ee787; }
+    .tok-global { color: #ffa657; }
+    .tok-boolean { color: #ff7b72; }
+  }
+}

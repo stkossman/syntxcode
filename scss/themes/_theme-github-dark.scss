@@ -1,0 +1,74 @@
+@use "../settings" as *;
+
+.sxcode.theme-github-dark {
+  background: #0d1117;
+
+  pre, code {
+    background: #0d1117;
+    color: #c9d1d9;
+    border-color: #30363d;
+  }
+
+  // base
+  .tok-keyword { color: #ff7b72; }
+  .tok-string { color: #a5d6ff; }
+  .tok-comment { color: #8b949e; font-style: italic; }
+  .tok-tag { color: #7ee787; }
+  .tok-attr { color: #79c0ff; }
+  .tok-punc { color: #c9d1d9; }
+  .tok-number { color: #f2cc60; }
+  .tok-operator { color: #ff7b72; }
+
+  // css
+  &.is-css {
+    .tok-selector { color: #7ee787; }
+    .tok-property { color: #79c0ff; }
+    .tok-value { color: #a5d6ff; }
+    .tok-unit { color: #f2cc60; }
+    .tok-pseudo { color: #d2a8ff; }
+  }
+
+  // js
+  &.is-js {
+    .tok-var { color: #ffa657; }
+    .tok-func { color: #d2a8ff; }
+    .tok-class { color: #f2cc60; }
+    .tok-method { color: #79c0ff; }
+    .tok-const { color: #7ee787; }
+  }
+
+  // html
+  &.is-html {
+    .tok-tag { color: #7ee787; }
+    .tok-attr { color: #79c0ff; }
+    .tok-attrvalue { color: #a5d6ff; }
+    .tok-doctype { color: #8b949e; }
+    .tok-entity { color: #d2a8ff; }
+  }
+
+  // ruby
+  &.is-ruby {
+    .tok-variable { color: #79c0ff; }
+    .tok-keyword { color: #ff7b72; }
+    .tok-string { color: #a5d6ff; }
+    .tok-comment { color: #8b949e; font-style: italic; }
+    .tok-number { color: #f2cc60; }
+    .tok-symbol { color: #79c0ff; }
+    .tok-regex { color: #d2a8ff; }
+    .tok-func { color: #d2a8ff; }
+    .tok-operator { color: #ff7b72; }
+    .tok-constant { color: #7ee787; }
+    .tok-class { color: #f2cc60; font-weight: bold; }
+    .tok-module { color: #f2cc60; }
+    .tok-global { color: #ffa657; }
+    .tok-instance-var { color: #79c0ff; }
+    .tok-class-var { color: #a5d6ff; }
+    .tok-boolean { color: #ff7b72; }
+    .tok-nil { color: #8b949e; }
+    .tok-punc { color: #c9d1d9; }
+    .tok-param { color: #79c0ff; }
+    .tok-range { color: #ffa657; }
+    .tok-heredoc { color: #a5d6ff; }
+    .tok-interp { color: #7ee787; }
+  }
+}

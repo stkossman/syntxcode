@@ -1,0 +1,10 @@
+@use "../settings" as *;
+
+.sxcode.is-css {
+  .tok-selector  { color: $color-tag; }
+  .tok-property  { color: $color-attr; }
+  .tok-value     { color: $color-string; }
+  .tok-number    { color: $color-number; }
+  .tok-func      { color: $color-func; }
+  .tok-comment   { color: $color-comment; font-style: italic; }
+}

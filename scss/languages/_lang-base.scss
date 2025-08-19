@@ -1,0 +1,8 @@
+@use "../settings" as *;
+
+.sxcode {
+  .tok-operator { color: $color-punc; }
+  .tok-variable { color: $color-text; }
+  .tok-boolean { color: $color-number; font-weight: bold; }
+  .tok-constant { color: $color-number; }
+}

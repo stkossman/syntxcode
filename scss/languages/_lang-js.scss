@@ -1,0 +1,11 @@
+@use "../settings" as *;
+
+.sxcode.is-js {
+  .tok-keyword   { color: $color-keyword; font-weight: bold; }
+  .tok-variable  { color: $color-text; }
+  .tok-string    { color: $color-string; }
+  .tok-number    { color: $color-number; }
+  .tok-func      { color: $color-func; }
+  .tok-operator  { color: $color-punc; }
+  .tok-comment   { color: $color-comment; font-style: italic; }
+}
