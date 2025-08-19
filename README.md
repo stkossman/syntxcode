@@ -14,7 +14,7 @@ npm install syntxcode
 Or you can include it directly in your HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/syntxcode@latest/dist/syntxcode.css">
+<link rel="stylesheet" href="https://unpkg.com/syntxcode@latest/dist/syntxcode.css">
 ```
 ### Learn more
-Learn more on the [SyntxCode](syntxcode.vercel.app) website.
+Learn more on the [SyntxCode](https://syntxcode.vercel.app) website.
