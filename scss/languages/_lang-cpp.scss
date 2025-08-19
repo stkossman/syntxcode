@@ -1,0 +1,16 @@
+@use "../settings" as *;
+
+.sxcode.is-cpp {
+  .tok-keyword { color: $color-keyword; font-weight: bold; }
+  .tok-string { color: $color-string; }
+  .tok-comment { color: $color-comment; font-style: italic; }
+  .tok-number { color: $color-number; }
+  .tok-operator { color: $color-punc; }
+  .tok-func { color: $color-func; }
+  .tok-class { color: $color-tag; font-weight: bold; }
+  .tok-namespace { color: $color-attr; }
+  .tok-preprocessor { color: $color-muted; }
+  .tok-type { color: $color-attr; }
+  .tok-macro { color: lighten($color-func, 10%); }
+  .tok-punc { color: $color-punc; }
+}

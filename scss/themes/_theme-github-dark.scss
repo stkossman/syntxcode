@@ -71,4 +71,53 @@
     .tok-heredoc { color: #a5d6ff; }
     .tok-interp { color: #7ee787; }
   }
+
+  // python
+  &.is-py {
+    .tok-variable { color: #c9d1d9; }
+    .tok-keyword { color: #ff7b72; }
+    .tok-string { color: #a5d6ff; }
+    .tok-comment { color: #8b949e; font-style: italic; }
+    .tok-number { color: #f2cc60; }
+    .tok-operator { color: #ff7b72; }
+    .tok-func { color: #d2a8ff; }
+    .tok-class { color: #f2cc60; font-weight: bold; }
+    .tok-decorator { color: #ffa657; }
+    .tok-builtin { color: #79c0ff; }
+    .tok-boolean { color: #ff7b72; }
+    .tok-none { color: #8b949e; }
+  }
+
+  // csharp
+  &.is-csharp {
+    .tok-param { color: #c9d1d9; }
+    .tok-keyword { color: #ff7b72; }
+    .tok-string { color: #a5d6ff; }
+    .tok-comment { color: #8b949e; font-style: italic; }
+    .tok-number { color: #f2cc60; }
+    .tok-operator { color: #ff7b72; }
+    .tok-func { color: #d2a8ff; }
+    .tok-class { color: #f2cc60; font-weight: bold; }
+    .tok-interface { color: #7ee787; }
+    .tok-namespace { color: #79c0ff; }
+    .tok-preprocessor { color: #8b949e; }
+    .tok-type { color: #79c0ff; }
+    .tok-attr { color: #ffa657; }
+  }
+
+  // cpp
+  &.is-cpp {
+    .tok-variable { color: #c9d1d9; }
+    .tok-keyword { color: #ff7b72; }
+    .tok-string { color: #a5d6ff; }
+    .tok-comment { color: #8b949e; font-style: italic; }
+    .tok-number { color: #f2cc60; }
+    .tok-operator { color: #ff7b72; }
+    .tok-func { color: #d2a8ff; }
+    .tok-class { color: #f2cc60; font-weight: bold; }
+    .tok-namespace { color: #79c0ff; }
+    .tok-preprocessor { color: #8b949e; }
+    .tok-type { color: #79c0ff; }
+    .tok-macro { color: #ffa657; }
+  }
 }

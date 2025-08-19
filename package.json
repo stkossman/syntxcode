@@ -1,6 +1,6 @@
 {
   "name": "syntxcode",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "CSS/SCSS syntax highlighting framework for <code> and <pre> tags. No JavaScript, just Sass.",
   "main": "dist/litcode.min.css",
   "files": [
