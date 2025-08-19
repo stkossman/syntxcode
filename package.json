@@ -1,6 +1,6 @@
 {
   "name": "syntxcode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS/SCSS syntax highlighting framework for <code> and <pre> tags. No JavaScript, just Sass.",
   "main": "dist/litcode.min.css",
   "files": [
@@ -13,7 +13,13 @@
     "dev": "sass --watch scss/syntxcode.scss dist/syntxcode.css",
     "prepare": "npm run build && npm run build:min"
   },
-  "keywords": ["css", "scss", "syntax highlighting", "code", "nojs"],
+  "keywords": [
+    "css",
+    "scss",
+    "syntax highlighting",
+    "code",
+    "nojs"
+  ],
   "author": "Kossman (https://github.com/stkossman)",
   "repository": {
     "type": "git",
